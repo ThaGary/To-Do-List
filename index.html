@@ -34,6 +34,22 @@
         </div>
     </nav>
     <main>
+        <form class="my-5 p-2">
+            <div class="form-group">
+                <label for="textarea">Add Activity</label>
+                <textarea class="form-control" id="textarea" rows="3"></textarea>
+            </div>
+            <div class="input-group mb-3 input-group-lg money p-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input id="textbox" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                    <span class="input-group-text">.00</span>
+                </div>
+            </div>
+            <input type="submit" class="btn btn-primary">
+        </form>
         <table class="table table-light my-5" id="list">
             <thead>
                 <tr>
