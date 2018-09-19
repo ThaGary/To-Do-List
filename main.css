@@ -1,0 +1,159 @@
+nav,
+footer {
+    font-family: 'Indie Flower' !important;
+    z-index: 2;
+}
+body {
+    width: 100vw;
+}
+.navbar-text {
+    text-shadow: 0px 0px 20px lightblue;
+}
+table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+.btn {
+    width: 29vw;
+
+}
+form #textarea {
+    width: 30vw;
+}
+form .money {
+    width: 30vw;
+}
+body {
+    font-family: 'Mirza' !important;
+    height: auto;
+    text-overflow: ellipsis;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+}
+
+.active {
+    text-shadow: 2px 2px 3px black;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    text-shadow: 2px 2px 4px Black;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(900px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(auto);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-1500px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(auto);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(1500px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(auto);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateX(1000px);
+        transform: translateY(-1000px);
+    }
+
+    100% {
+        transform: translateX(auto);
+        transform: translateY(auto);
+    }
+}
+
+@keyframes party {
+    0% {
+        width: 100px;
+        height: 100px;
+    }
+
+    50% {
+        width: 300px;
+        height: 300px;
+    }
+
+    100% {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .small-picture, .fixedbutton {
+        display: none;
+    }
+
+    main iframe {
+        width: 100vw;
+    }
+
+    ::-webkit-scrollbar {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .large-picture {
+        display: inline;
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .large-picture {
+        display: none;
+    }
+}
