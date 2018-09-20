@@ -13,6 +13,9 @@ body {
     margin: auto;
     width: 50vw;
 }
+.trash {
+    width: 20px;
+}
 table {
     width: 402px;
     display: flex;

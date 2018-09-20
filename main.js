@@ -20,6 +20,11 @@ function submitForm(event) {
 
     var cost = document.getElementById('textbox')
     var price = cost.value
+    if (price === "" || price === 0) {
+        price = 'FREE'
+    } else {
+        price = '$' + cost.value
+    }
     console.log(price)
     
     var tbody = document.querySelector('tbody')
@@ -28,21 +33,28 @@ function submitForm(event) {
     var td2 = document.createElement('td')
     var td3 = document.createElement('td')
     var td4 = document.createElement('td')
+    var td5 = document.createElement('td')
+    td5.className += " trash"
 
     tbody.appendChild(tr)
     tr.appendChild(td)
     tr.appendChild(td2)
     tr.appendChild(td3)
     tr.appendChild(td4)
-
-    td.className += " stuff"
-    td2.className += " stuff"
-    td3.className += " stuff"
-    td4.className += " stuff"
+    tr.appendChild(td5)
 
     td.innerHTML = date
     td2.innerHTML = activity
-    td3.innerHTML = '$' + price
+    td3.innerHTML = price
     td4.innerHTML = who
-
+    td5.innerHTML = '<i class="fas fa-trash-alt" style="color:Red"></i>'
 }
+
+// var removeButtons = document.querySelectorAll('i')
+// removeButtons.addEventListener('click',removing)
+
+// function removing(event) {
+//     for (var i = 0; i < removeButtons.length; i++) {
+        
+//     }
+// }
