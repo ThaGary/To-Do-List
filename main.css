@@ -6,12 +6,34 @@ footer {
 body {
     width: 100vw;
 }
+.formBoxBG {
+    background-color: darkgray;
+    border: 2px solid black;
+    border-radius: 25px;
+    width:50vw;
+    margin: auto;
+    padding-left: 5px;
+    height: 40vh;
+    margin-top: 5vh;
+}
+.formBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+}
 .navbar-text {
     text-shadow: 0px 0px 20px lightblue;
 }
 .chart{
     margin: auto;
     width: 50vw;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: auto;
 }
 .trash {
     width: 20px;
@@ -23,8 +45,6 @@ table {
     align-items: center;
     border: 1px solid black;
 }
-table td,table tr,table th {
-}
 table th{
     width: 200px;
     height: 20px;
@@ -33,22 +53,27 @@ table td {
     width: 200px;
     height: 20px;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-}
 .btn {
-    width: 29vw;
+    width: 10vw;
 
 }
 form #textarea {
+    display: flex;
+    flex-direction: row;
     width: 30vw;
+    height: 200px;
+    padding-right: 15px;
+}
+form .people {
+    display: flex;
+    flex-direction: row;
+    width: 15vw;
 }
 form .money {
-    width: 30vw;
+    padding: 10px;
+    width: 16vw;
 }
+
 body {
     font-family: 'Mirza' !important;
     height: auto;
@@ -67,10 +92,6 @@ html {
     overflow-x: hidden;
 }
 
-.container1 {
-    display: flex;
-    justify-content: center;
-}
 
 .active {
     text-shadow: 2px 2px 3px black;
